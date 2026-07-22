@@ -1,0 +1,20 @@
+{
+  "name": "tiktok-dl",
+  "version": "1.0.0",
+  "description": "Manual Tiktok Video Downloader without 3rd API, just read the metadata",
+  "keywords": [
+    "tiktokdl"
+  ],
+  "license": "ISC",
+  "author": "Pren",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "dependencies": {
+    "axios": "^1.18.1",
+    "cheerio": "^1.2.0",
+    "express": "^5.2.1"
+  }
+}
