@@ -33,9 +33,9 @@ http://localhost:3000
 
 ---
 
-## API
+## API Work
 
-### Get Video Information and Stream URL
+### 1. GET VIDEO METADATA
 
 **Request**
 
@@ -67,9 +67,10 @@ curl "http://localhost:3000/api/download?url=https://www.tiktok.com/@username/vi
 
 ---
 
-### Watch / Download Video
+### 2. GET MP4 RESULT
 
 Use the `stream_url` returned from `/api/download`.
+![Preview](doc/stream_url.png "TikTok Downloader")
 
 **Request**
 
@@ -84,26 +85,6 @@ curl -o video.mp4 "http://localhost:3000/api/watch?url=TOKEN"
 ```
 
 This endpoint returns the video as an `mp4` stream.
+![Preview](doc/stream_watch.png "TikTok Downloader")
 
 ---
-
-## Project Structure
-
-```
-.
-├── lib/
-│   ├── constants.js
-│   ├── crypto.js
-│   └── response.js
-├── routes/
-│   ├── download.js
-│   └── watch.js
-├── server.js
-└── package.json
-```
-
-## Dependencies
-
-- Express
-- Axios
-- Cheerio
