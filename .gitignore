@@ -1,0 +1,8 @@
+# Common IDEs and editors
+.idea/
+.vscode/
+
+# Environmental variables and secrets
+.env
+
+node_modules/
